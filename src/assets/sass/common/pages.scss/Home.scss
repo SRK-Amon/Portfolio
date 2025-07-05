@@ -1,0 +1,33 @@
+.home{
+    &_box{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 300px;
+        .home_left_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            &_title{
+                color: #fff;
+                font-family: var(--i700);
+                font-size: 25px;
+            }
+            &_name{
+                color: #fff;
+                font-family: var(--c400);
+                font-size: 70px;
+                letter-spacing: 7px;                
+            }
+            &_job{
+                color: #fff;
+                font-family: var(--i700);
+                font-size: 25px;
+            }
+        }
+    }
+    
+}

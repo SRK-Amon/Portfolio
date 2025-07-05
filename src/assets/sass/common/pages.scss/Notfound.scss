@@ -1,0 +1,48 @@
+.notfound{
+
+    &_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        &_title{
+            color: gold;
+            font-family: var(--c400);
+            font-size: 50px;
+        }
+        .notfound_mini_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+            &_404{
+                color: #fff;
+                font-family: var(--i700);
+                font-size: 300px;
+            } 
+        }
+        &_text{
+            color: #fff;
+            font-family: var(--c400);
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        &_images{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 800px;
+
+            .houston_right , 
+            .houston_left{
+                width: 350px;
+                height: 450px;
+            }
+            .houston_left{
+                transform: rotateY(180deg);
+            }
+        }       
+    }
+
+}

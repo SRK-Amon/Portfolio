@@ -1,0 +1,14 @@
+// common scss
+@use './common/fonts.scss';
+@use './common/common.scss';
+
+// components scss
+@use './common/components.scss/Nav.scss';
+
+// pages scss
+@use './common/pages.scss/Home.scss';
+@use './common/pages.scss/Skills.scss';
+@use './common/pages.scss/RainEffect.scss';
+@use './common/pages.scss/Notfound.scss';
+
+
