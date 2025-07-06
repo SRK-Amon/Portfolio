@@ -5,6 +5,12 @@
     justify-content: space-around;
     align-items: center;
     gap: 100px;
+    &_title{
+      font-family: var(--m700);
+      font-size: 40px;
+      color: #fff;
+      letter-spacing: 3px;
+    }
     .skills_mini_box {
       display: flex;
       justify-content: space-around;
