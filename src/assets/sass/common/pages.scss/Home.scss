@@ -60,7 +60,7 @@
         border-radius: 10px;
         background-color: #24b3ff;
         transition: 0.5s;
-        a{
+        a {
           color: #fff;
         }
         font-family: var(--m900);
@@ -83,35 +83,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      &_title {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        font-family: var(--i500);
-        color: #fff;
-        font-size: 40px;
-        span{
-          & span{
-            color: #24baff;
-          }
-        }
-        &::after {
-          content: "";
-          width: 60%;
-          object-position: center;
-          height: 5px;
-          display: block;
-          margin: 0 auto;
-          margin-top: 10px;
-          border-radius: 2px;
-          background-color: #24b3ff;
-        }
-      }
+      padding: 150px 0 150px 0;
+
       .aboutme_mini_box {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 50px;
-        margin-bottom: 100px;
         .aboutme_info_box {
           &_text {
             font-family: var(--i500);
@@ -130,11 +108,87 @@
       }
     }
   }
-}
+  .experience {
+    &_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 150px 0;
+      .experience_work_box {
+        display: flex;
+        flex-direction: column;
+        .experience_work_mini_box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 100px;
 
-// .home_left_box{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 20px;
+          img {
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            box-shadow: 0 0 5px #fff;
+          }
+        }
+        .experience_info_box {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          &_title {
+            font-family: var(--i700);
+            color: gold;
+            font-size: 24px;
+          }
+          &_text {
+            font-family: var(--i500);
+            color: #fff;
+            font-size: 18px;
+          }
+        }
+        .experience_worktime_box {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-top: 50px;
+          .worktime_post {
+            color: gold;
+            font-family: var(--i500);
+            font-size: 20px;
+            span {
+              color: #fff;
+            }
+          }
+          .worktime_time {
+            color: gold;
+            font-family: var(--i500);
+            font-size: 20px;
+            span {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.title {
+  margin-bottom: 80px;
+  font-family: var(--i500);
+  color: #fff;
+  font-size: 40px;
+  & span {
+    color: #24baff;
+  }
+  &::after {
+    content: "";
+    width: 60%;
+    object-position: center;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color: #24b3ff;
+  }
+}
