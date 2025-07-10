@@ -1,6 +1,6 @@
 import frontend from "../assets/images/frontend.png";
 import Avo from "../assets/images/AVO.jpg";
-import Dentmed from "../assets/images/Dentmed.png";
+// import Dentmed from "../assets/images/Dentmed.png";
 
 const Home = () => {
   return (
