@@ -43,3 +43,23 @@ button {
     border: none;
     cursor: pointer;
 }
+.title {
+    margin-bottom: 80px;
+    font-family: var(--i500);
+    color: #fff;
+    font-size: 40px;
+    & span {
+      color: #24baff;
+    }
+    &::after {
+      content: "";
+      width: 60%;
+      object-position: center;
+      height: 5px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      border-radius: 2px;
+      background-color: #24b3ff;
+    }
+  }

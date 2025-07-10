@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+
 import frontend from "../assets/images/frontend.png";
 import Avo from "../assets/images/AVO.jpg";
-// import Dentmed from "../assets/images/Dentmed.png";
+import Dentmed from "../assets/images/Dentmed.png";
+import wsa from "../assets/images/WallStreetAcademy.jpg";
+import cambridge from "../assets/images/Cambridge.webp";
+import proweb from "../assets/images/Proweb.jpg";
 
 const Home = () => {
   return (
@@ -13,13 +18,13 @@ const Home = () => {
             <h3 className="home_box_job">Front-end Developer</h3>
             <div className="home_mini_box">
               <button className="home_mini_box_btn">
-                <a href="#aboutme">Abot me</a>
+                <a href="#aboutme">About me</a>
               </button>
               <button className="home_mini_box_btn">
-                <a href="#aboutme">Work expirience</a>
+                <a href="#experience">Work expirience</a>
               </button>
               <button className="home_mini_box_btn">
-                <a href="#aboutme">Education</a>
+                <a href="#education">Education</a>
               </button>
             </div>
           </div>
@@ -45,10 +50,24 @@ const Home = () => {
                 </div>
                 <img className="aboutme_mini_box_img" src={frontend} alt="" />
               </div>
+              <div className="quote">
+                <motion.blockquote
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                >
+                  <p>
+                    "If your code works on the first try,
+                    <span> you’ve probably forgotten something.</span>"
+                  </p>
+                  <footer>— Programmer's wisdom 💻</footer>
+                </motion.blockquote>
+              </div>
             </div>
           </div>
         </section>
-        <section className="experience">
+        <section className="experience" id="experience">
           <div className="container">
             <div className="experience_box">
               <h2 className="title">
@@ -91,6 +110,148 @@ const Home = () => {
                     Date : <span> March 2025 — till now ,(5 months)</span>
                   </p>
                 </div>
+              </div>
+              <div className="experience_work_box">
+                <div className="experience_work_mini_box">
+                  <img src={Dentmed} alt="" />
+                  <div className="experience_info_box">
+                    <h3 className="experience_info_box_title">🦷 Dentmed</h3>
+                    <p className="experience_info_box_text">
+                      Dentmed is a company specializing in the distribution of
+                      high-quality dental materials and equipment. Its mission
+                      is to provide dental professionals with reliable,
+                      innovative, and effective solutions for modern dentistry.
+                    </p>
+                    <p className="experience_info_box_text">
+                      🛒 Wide product range — everything from dental instruments
+                      to consumables and care products.
+                    </p>
+                    <p className="experience_info_box_text">
+                      🚚 Fast & reliable delivery — efficient logistics to
+                      ensure clinics and professionals get what they need on
+                      time.
+                    </p>
+                    <p className="experience_info_box_text">
+                      💡 Professional support — expert guidance and product
+                      recommendations for dental practices.
+                    </p>
+                    <p className="experience_info_box_text">
+                      🔬 Quality & innovation — only trusted brands and
+                      certified materials used in dentistry worldwide.
+                    </p>
+                  </div>
+                </div>
+                <div className="experience_worktime_box">
+                  <h3 className="worktime_post">
+                    Post : <span>call-center operator</span>
+                  </h3>
+                  <p className="worktime_time">
+                    Date :{" "}
+                    <span> October 2024 — February 2025 ,(5 months)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="education" id="education">
+          <div className="container">
+            <div className="education_box">
+              <h2 className="title">
+                Edu<span>cation</span>
+              </h2>
+              <div className="education_mini_box">
+                <div className="education_info_box">
+                  <img src={proweb} alt="" className="education_info_box_img" />
+                  <div className="education_info_mini_box">
+                    <h2 className="education_info_mini_box_title">
+                    💻 PROWEB Academy
+                    </h2>
+                    <p className="education_info_mini_box_text">
+                    PROWEB Academy is a modern IT education center specializing in practical training for web development and digital technologies. Focused on real-world skills, it offers intensive programs in:
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    🧠 Frontend development — HTML, CSS, JavaScript, React, TypeScript
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    🔧 Project-based learning — build real applications from day one
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    🎓 Career-ready education — hands-on tasks, mentorship, and portfolio building
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    🚀 Fast-track growth — designed for beginners with no prior experience in tech
+                    </p>
+                  </div>
+                </div>
+                <p className="education_mini_box_text">
+                  Date : <span> 2024 year — till now , (8 months)</span>
+                </p>
+              </div>
+              <div className="education_mini_box">
+                <div className="education_info_box">
+                  <img src={cambridge} alt="" className="education_info_box_img" />
+                  <div className="education_info_mini_box">
+                    <h2 className="education_info_mini_box_title">
+                    📘 Cambridge Learning Center
+                    </h2>
+                    <p className="education_info_mini_box_text">
+                    Cambridge Learning Center is an international educational organization that provides high-quality English language and academic preparation programs. With a focus on modern teaching methods and personalized learning, it helps students build strong foundations in:
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    🗣️ English fluency — grammar, speaking, writing, and comprehension
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    🎯 Exam preparation — IELTS, TOEFL, and other global standards
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    👨‍🏫 Interactive learning — student-centered classes with certified instructors
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    🌍 Global perspective — equipping learners with skills for education and career abroad
+                    </p>
+                  </div>
+                </div>
+                <p className="education_mini_box_text">
+                  Date : <span> 2023 year — 2024 year , (9 months)</span>
+                </p>
+              </div>
+              <div className="education_mini_box">
+                <div className="education_info_box">
+                  <img src={wsa} alt="" className="education_info_box_img" />
+                  <div className="education_info_mini_box">
+                    <h2 className="education_info_mini_box_title">
+                      📈 Wall Street Academy
+                    </h2>
+                    <p className="education_info_mini_box_text">
+                      Wall Street Academy (WSA) is a leading online educational
+                      platform founded by Q Banks, focused on teaching advanced
+                      forex trading skills through real-world strategies and
+                      mentorship.
+                    </p>
+                    <p className="education_info_mini_box_text">
+                      📚 Structured learning — a step-by-step trading curriculum
+                      designed for both beginners and experienced traders.
+                    </p>
+                    <p className="education_info_mini_box_text">
+                      📊 Real-market strategies — focus on technical analysis,
+                      chart patterns, and risk management for consistent
+                      results.
+                    </p>
+                    <p className="education_info_mini_box_text">
+                      👨‍🏫 Mentorship & support — lifetime access to training
+                      materials, live sessions, and a global trading community.
+                    </p>
+                    <p className="education_info_mini_box_text">
+                      🚀 Empowerment mindset — not just about trading, but
+                      achieving financial freedom through discipline and smart
+                      decision-making.
+                    </p>
+                  </div>
+                </div>
+                <p className="education_mini_box_text">
+                  Date : <span> 2022 year — 2023 year , (1 year)</span>
+                </p>
               </div>
             </div>
           </div>

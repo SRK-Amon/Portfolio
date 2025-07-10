@@ -1,0 +1,22 @@
+.footer{
+    &_box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .footer_left_box{
+            &_contacts{
+                .contacts_img{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

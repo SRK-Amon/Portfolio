@@ -15,7 +15,7 @@ const Skills = () => {
     <div className="skills">
       <div className="container">
         <div className="skills_box">
-          <h2 className="skills_box_title">Main skills</h2>
+          <h2 className="title">Main <span>skills</span></h2>
           <div className="skills_mini_box">
             <img src={html} className="skills_mini_box_img" />
             <p className="skills_mini_box_text">
@@ -119,7 +119,7 @@ const Skills = () => {
               and backend development.
             </p>
           </div>
-          <h2 className="skills_box_title">Others</h2>
+          <h2 className="title">Oth<span>ers</span></h2>
           <div className="skills_mini_box">
             <img src={github} className="skills_mini_box_img" />
             <p className="skills_mini_box_text">

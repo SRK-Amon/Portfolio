@@ -83,7 +83,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 150px 0 150px 0;
+      padding: 80px 0 80px 0;
 
       .aboutme_mini_box {
         display: flex;
@@ -106,6 +106,30 @@
           width: 600px;
         }
       }
+      .quote {
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        blockquote {
+          max-width: 800px;
+          text-align: center;
+          font-size: 24px;
+          font-style: italic;
+          color: #ffffff;
+          line-height: 1.6;
+          padding: 20px;
+          background: rgba(36, 186, 255, 0.05);
+          border-radius: 12px;
+          box-shadow: 0 0 15px rgba(36, 186, 255, 0.275);
+
+          span {
+            color: #24baff;
+            font-weight: 600;
+          }
+        }
+      }
     }
   }
   .experience {
@@ -115,6 +139,10 @@
       justify-content: center;
       align-items: center;
       padding: 150px 0;
+      gap: 100px;
+      h2 {
+        margin-bottom: 40px;
+      }
       .experience_work_box {
         display: flex;
         flex-direction: column;
@@ -128,7 +156,7 @@
             width: 250px;
             height: 250px;
             border-radius: 15px;
-            box-shadow: 0 0 5px #fff;
+            border: 1px solid #fff;
           }
         }
         .experience_info_box {
@@ -171,24 +199,61 @@
       }
     }
   }
-}
-.title {
-  margin-bottom: 80px;
-  font-family: var(--i500);
-  color: #fff;
-  font-size: 40px;
-  & span {
-    color: #24baff;
+  .education {
+    background-color: #000;
+    &_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 0 80px 0;
+      gap: 100px;
+      .title{
+        margin-bottom: 40px;
+      }
+      .education_mini_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .education_info_box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 100px;
+          &_img {
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            border: 1px solid #fff;
+          }
+          .education_info_mini_box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &_title {
+              font-family: var(--i700);
+              color: gold;
+              font-size: 24px;
+            }
+            &_text {
+              font-family: var(--i500);
+              color: #fff;
+              font-size: 18px;
+            }
+          }
+        }
+        &_text {
+          margin-top: 40px;
+          color: gold;
+          font-family: var(--i500);
+          font-size: 20px;
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
   }
-  &::after {
-    content: "";
-    width: 60%;
-    object-position: center;
-    height: 5px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    border-radius: 2px;
-    background-color: #24b3ff;
-  }
 }
+
