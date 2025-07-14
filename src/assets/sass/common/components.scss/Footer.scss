@@ -1,21 +1,60 @@
 .footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
     &_box{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        img{
+        &_logo{
             width: 200px;
             height: 200px;
             border-radius: 50%;
         }
         .footer_left_box{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            &_title{
+                font-family: var(--i500);
+                font-size: 18px;
+                color: #fff;
+            }
             &_contacts{
+                display: flex;
+                gap: 10px;
                 .contacts_img{
                     img{
+                        border-radius: 50%;
                         width: 50px;
-                        height: 50px;
-                    }
+                        height: 50px;   
+                    }   
                 }
+            }
+        }
+        .footer_right_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            
+            &_title{
+                font-family: var(--i500);
+                font-size: 18px;
+                color: #fff;
+                width: 255px;
+                letter-spacing: 1px;   
+            }   
+            &_btn{
+                a{
+                    font-family: var(--i700);
+                font-size: 18px;
+                color: #fff;
+                }
+                
+                background-color: #24b3ff;
+                padding: 10px 8px;
+                border-radius: 10px;
             }
         }
     }

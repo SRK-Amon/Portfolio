@@ -1,0 +1,32 @@
+.projects {
+  &_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    gap: 100px;
+    .project_box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_img {
+        img {
+          width: 300px;
+          height: 380px;
+        }
+      }
+      .project_mini_box{
+        .project_btn_box{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            align-items: center;
+            .project_btn{
+                padding: 13px 10px;
+                border-radius: 10px;
+            }
+        }
+      }
+    }
+  }
+}

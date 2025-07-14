@@ -224,28 +224,22 @@ const Home = () => {
                       📈 Wall Street Academy
                     </h2>
                     <p className="education_info_mini_box_text">
-                      Wall Street Academy (WSA) is a leading online educational
-                      platform founded by Q Banks, focused on teaching advanced
-                      forex trading skills through real-world strategies and
-                      mentorship.
+                    Wall Street Academy is a professional English learning center based in Uzbekistan, focused on practical language skills for real-life and career use. It offers dynamic, immersive courses that help learners gain fluency and confidence through:
                     </p>
                     <p className="education_info_mini_box_text">
-                      📚 Structured learning — a step-by-step trading curriculum
-                      designed for both beginners and experienced traders.
+                    🗣 Speaking-focused lessons — boost communication skills with native-style training
                     </p>
                     <p className="education_info_mini_box_text">
-                      📊 Real-market strategies — focus on technical analysis,
-                      chart patterns, and risk management for consistent
-                      results.
+                    📚 Structured programs — from beginner to advanced levels
                     </p>
                     <p className="education_info_mini_box_text">
-                      👨‍🏫 Mentorship & support — lifetime access to training
-                      materials, live sessions, and a global trading community.
+                    👨‍🏫 Experienced teachers — certified, supportive instructors
                     </p>
                     <p className="education_info_mini_box_text">
-                      🚀 Empowerment mindset — not just about trading, but
-                      achieving financial freedom through discipline and smart
-                      decision-making.
+                    🎯 Goal-oriented learning — ideal for study abroad, work, and international exams (IELTS, TOEFL )
+                    </p>
+                    <p className="education_info_mini_box_text">
+                    🌍 Modern approach — interactive, real-world English for global opportunities
                     </p>
                   </div>
                 </div>
