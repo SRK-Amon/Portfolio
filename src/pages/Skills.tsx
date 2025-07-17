@@ -4,11 +4,9 @@ import css from "../assets/images/css.svg";
 import html from "../assets/images/html.svg";
 import js from "../assets/images/java_script.svg";
 import sass from "../assets/images/sass.svg";
-import nodeJs from "../assets/images/Node.js.svg";
 import github from "../assets/images/github.svg";
 import git from "../assets/images/git.svg";
 import figma from "../assets/images/figma.svg";
-import chatgpt from "../assets/images/chatgpt.svg";
 
 const Skills = () => {
   return (
@@ -104,21 +102,6 @@ const Skills = () => {
               especially valuable for building scalable and robust applications.
             </p>
           </div>
-          <div className="skills_mini_box">
-            <img src={nodeJs} className="skills_mini_box_img" />
-            <p className="skills_mini_box_text">
-              ✅ Node.js is a server-side JavaScript runtime environment built
-              on Chrome’s V8 engine. It enables asynchronous, event-driven
-              programming, allowing developers to build scalable and
-              high-performance network applications. Node.js is widely used for
-              creating REST APIs, real-time applications, and microservices. Its
-              non-blocking I/O model makes it efficient and suitable for
-              data-intensive tasks. With access to npm, the largest package
-              ecosystem, Node.js accelerates development by providing thousands
-              of reusable modules. It's a key technology in modern full-stack
-              and backend development.
-            </p>
-          </div>
           <h2 className="title">Oth<span>ers</span></h2>
           <div className="skills_mini_box">
             <img src={github} className="skills_mini_box_img" />
@@ -157,20 +140,6 @@ const Skills = () => {
               with detailed design specs. I’ve used Figma to translate design
               concepts into pixel-perfect, responsive front-end implementations
               in React and HTML/CSS projects.
-            </p>
-          </div>
-          <div className="skills_mini_box">
-            <img src={chatgpt} className="skills_mini_box_img" />
-            <p className="skills_mini_box_text">
-              ✅ ChatGPT is an advanced AI language model developed by OpenAI,
-              designed for generating human-like responses and assisting with
-              tasks like code generation, documentation, content writing, and
-              debugging. I use ChatGPT as a productivity assistant in
-              development workflows — for writing boilerplate code, optimizing
-              algorithms, generating documentation, and solving coding
-              challenges. It helps accelerate learning and reduces time spent on
-              repetitive tasks, making it a valuable tool in my development
-              stack.
             </p>
           </div>
         </div>
