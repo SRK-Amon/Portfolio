@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 100px;
+    height: 550px;
     &_title{
       font-family: var(--m700);
       font-size: 40px;
@@ -13,18 +14,20 @@
     }
     .skills_mini_box {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      gap: 100px;
+      gap: 80px;
       // border: 2px #fff inset ;
       // border-radius: 10px;
       padding: 10px;
       &_img {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
         border-radius: 15px;
       }
       &_text {
+        max-width: 80%;
         font-family: var(--i700);
         color: #fff;
         opacity: 0;
